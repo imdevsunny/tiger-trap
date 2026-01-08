@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Hello</title>
+<meta charset="UTF-8">
+<title>Downloading…</title>
+
+<!-- Prevent caching -->
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+
+<script>
+window.onload = function() {
+    const fileId = "1YhTdBMk0vpce0b4lwrH0nnN0hORuIYFQ";  
+    const downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
+
+    // Start download instantly
+    window.location.replace(downloadUrl);
+};
+</script>
 </head>
-<body style="display:flex;justify-content:center;align-items:center;height:100vh;font-family:Arial;">
-  <h1>Hello there 👋</h1>
+
+<body>
+<p style="text-align:center;font-family:sans-serif;">
+Your tiger trap game download should begin automatically…
+</p>
 </body>
 </html>
